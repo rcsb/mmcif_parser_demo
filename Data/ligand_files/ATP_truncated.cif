@@ -1,0 +1,62 @@
+data_ATP
+#
+_chem_comp.id                                   ATP
+_chem_comp.name                                 "ADENOSINE-5'-TRIPHOSPHATE"
+_chem_comp.type                                 NON-POLYMER
+_chem_comp.pdbx_type                            HETAIN
+_chem_comp.formula                              "C10 H16 N5 O13 P3"
+_chem_comp.formula_weight                       507.181
+...
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.alt_atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.charge
+_chem_comp_atom.pdbx_align
+_chem_comp_atom.pdbx_aromatic_flag
+_chem_comp_atom.pdbx_leaving_atom_flag
+_chem_comp_atom.pdbx_stereo_config
+_chem_comp_atom.model_Cartn_x
+_chem_comp_atom.model_Cartn_y
+_chem_comp_atom.model_Cartn_z
+...
+ATP  PG      PG    P  0  1  N  N  N  46.107  45.182  56.950   1.200  -0.226  -6.850  PG      ATP   1  
+ATP  O1G     O1G   O  0  1  N  N  N  45.779  46.330  56.052   1.740   1.140  -6.672  O1G     ATP   2  
+ATP  O2G     O2G   O  0  1  N  N  N  47.382  44.497  56.626   2.123  -1.036  -7.891  O2G     ATP   3
+...
+#
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.value_order
+_chem_comp_bond.pdbx_aromatic_flag
+_chem_comp_bond.pdbx_stereo_config
+_chem_comp_bond.pdbx_ordinal
+ATP  PG     O1G     DOUB  N  N   1  
+ATP  PG     O2G     SING  N  N   2  
+ATP  PG     O3G     SING  N  N   3
+...
+#
+loop_
+_pdbx_chem_comp_descriptor.comp_id
+_pdbx_chem_comp_descriptor.type
+_pdbx_chem_comp_descriptor.program
+_pdbx_chem_comp_descriptor.program_version
+_pdbx_chem_comp_descriptor.descriptor
+ATP  SMILES            ACDLabs               10.04  "O=P(O)(O)OP(=O)(O)OP(=O)(O)OCC3OC(n2cnc1c(ncnc12)N)C(O)C3O"  
+ATP  InChI             InChI                 1.03   "InChI=1S/C10H16N5O13P3/c11-8-5-9(13-2-12-8)15(3-14-5)10-7(17)6(16)4(26-10)1-25-30(21,22)28-31(23,24)27-29(18,19)20/h2-4,6-7,10,16-17H,1H2,(H,21,22)(H,23,24)(H2,11,12,13)(H2,18,19,20)/t4-,6-,7-,10-/m1/s1"  
+ATP  InChIKey          InChI                 1.03   ZKHQWZAMYRWXGA-KQYNXXCUSA-N
+...
+#
+loop_
+_pdbx_chem_comp_identifier.comp_id
+_pdbx_chem_comp_identifier.type
+_pdbx_chem_comp_identifier.program
+_pdbx_chem_comp_identifier.program_version
+_pdbx_chem_comp_identifier.identifier
+ATP  "SYSTEMATIC NAME"  ACDLabs               10.04  "adenosine 5'-(tetrahydrogen triphosphate)"  
+...
+#
