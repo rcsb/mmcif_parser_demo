@@ -7,6 +7,9 @@
 """
 Process data category
 """
+import logging
+logger_name = '.'.join(["PDB_EX", __name__])
+logger = logging.getLogger(logger_name)
 
 
 def checkKey(d_, l_key):
@@ -111,7 +114,7 @@ def mergeCatItemsUpdateValuesByRowIndex(d_to, d_from, tf_replace=False):
     if not d_to:
         return d_from
 
-    # check whether key items are present in both cats, return d_to if not
+    # check whether both cats have the same number of rows, if not, return d_to
     if len(list(d_to.values())[0]) != len(list(d_from.values())[0]):
         return d_to
 
